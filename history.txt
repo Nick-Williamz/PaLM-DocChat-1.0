@@ -1,0 +1,56 @@
+Question: What is a good library for working with Random numbers?
+Answer: The random module provides a number of functions to generate pseudo-random numbers.
+
+To generate an integer in the range [0, 100], you can use the randint() function. For example, the following code will generate a random integer in the range [0, 100]:
+
+```
+import random
+
+random_number = random.randint(0, 100)
+```
+
+To generate a floating-point number in the range [0, 1], you can use the random() function. For example, the following code will generate a random floating-point number in the range [0, 1]:
+
+```
+import random
+
+random_number = random.random()
+```
+
+To generate a random number from a specified sequence, you can use the choice() function. For example, the following code will generate a random element from the sequence ['a', 'b', 'c']:
+
+```
+import random
+
+random_element = random.choice(['a', 'b', 'c'])
+```
+
+Question: Explain this concept a bit more: random_element = random.choice(['a', 'b', 'c'])
+Answer: The random.choice() function returns a random element from a non-empty sequence. The argument can be a list, tuple, string, or any other iterable object.
+
+The syntax of the random.choice() function is:
+
+```
+random.choice(sequence)
+```
+
+where `sequence` is the sequence from which you want to choose an element.
+
+For example, the following code chooses a random number from 1 to 6:
+
+```
+import random
+
+number = random.choice(range(1, 7))
+```
+
+The random.choice() function can also be used to choose a random element from a list of strings. For example, the following code chooses a random fruit from a list of fruits:
+
+```
+fruits = ["apple", "orange", "banana"]
+
+fruit = random.choice(fruits)
+```
+
+The random.choice() function is a very useful function for generating random numbers and elements from a sequence.
+
